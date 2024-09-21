@@ -16,6 +16,11 @@ ncol(penguins)
 mean_flipper_length <- mean(penguins$flipper_length_mm, na.rm = TRUE)
 mean_flipper_length
 
+#From the description code, we know that in the penguins dataset,variable names include: `species`, `island`, `bill_length_mm`,`bill_depth_mm`,  `flipper_length_mm`, `body_mass_g`, `sex`, `year`.
+#there are 344 rows and 8 columns in this dataset.
+#The mean flipper length is 200.9152.
+
+
 #a scatterplot of flipper_length_mm vs bill_length_mm
 library(ggplot2)
 ggplot(penguins, aes(x = bill_length_mm, y = flipper_length_mm, color = species)) +
